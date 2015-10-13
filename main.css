@@ -1,0 +1,166 @@
+html, body {height:100%;}
+
+body{
+    background-color: #FFF;
+    font: 18px Open Sans;
+}
+
+.jspDrag {
+    background: #337AB7;
+}
+
+.full-height {
+    height: 100%;
+}
+
+.main-frame-container {
+    padding: 40px;
+}
+
+.main-frame .panel-heading {
+    padding-top: 5px ;
+}
+
+.main-frame {
+    margin : auto;
+    height:100%;
+    min-height: 635px;
+    -moz-box-shadow: 0px 0px 12px 1px #656565;
+    -webkit-box-shadow: 0px 0px 12px 1px #656565;
+    -o-box-shadow: 0px 0px 12px 1px #656565;
+    box-shadow: 0px 0px 12px 1px #656565;
+}
+
+.main-frame .panel-heading {
+    height : 5%;
+    min-height: 15px;
+}
+
+.main-frame .panel-body {
+    height : 95%;
+    min-height: 600px;
+}
+
+.file-manager {
+    border-radius: 5px;
+    height: 100%;
+    min-height: 537px;
+    overflow: auto;
+    line-height: 0;
+    border: 1px solid #337AB7;
+    padding: 20px;
+}
+
+.dir-item {
+    display: table;
+    width: 100%;
+    display:inline-block
+
+ }
+
+.ajax-loader {
+    position: relative;
+    top: 35%;
+    left: 30%;
+}
+
+.dir-item div{
+    line-height: 1;
+    height: 80px;
+    padding-top: 30px;
+    color: #222222;
+}
+
+.file-manager .dir-item:nth-child(2n){
+    background-color: #FFF;
+}
+
+.file-manager .dir-item:nth-child(2n):HOVER{
+     background-color: #e8e8e8;
+     color: #222222;
+ }
+
+.file-manager .dir-item:nth-child(2n+1){
+    background-color: #DBEFFF;
+}
+
+.file-manager .dir-item:nth-child(2n+1):HOVER{
+    background-color: #b8dfff;
+    color: #222222;
+}
+
+.file-manager .dir-item.active {
+    background-color: #2E7FC1;
+    color: white;
+}
+
+.file-manager .dir-item.active a div{
+    color: #FFF;
+}
+
+.file-manager .dir-item.active a div:HOVER{
+    color: #000;
+}
+
+.file-name{
+    font-weight: bold;
+    padding-left: 30px;
+}
+
+.file-date{
+    font-weight: bold;
+    text-align: right;
+    font-size: 13px;
+}
+
+.file-size{
+    font-weight: bold;
+    text-align: right;
+    font-size: 13px;
+}
+
+.file-detail {
+    display : none;
+    word-break: break-all;
+}
+
+.detail-list{
+    list-style: none;
+}
+
+.detail-list li {
+    padding: 10px;
+}
+
+.bcv_logo {
+    width: 100px;
+    padding-right: 10px;
+}
+
+.detail-icon img {
+    left: 10%;
+    position: relative;
+}
+
+
+@media(max-width:992px){
+    .dir-item .file-name {
+        padding : 10px 0 0 30px;
+        height: 40px;
+    }
+
+    .dir-item .file-date{
+        text-align: left;
+        height: 40px;
+        padding: 0 0 0 30px;
+    }
+
+    .dir-item .file-size{
+        text-align: left;
+        height: 40px;
+        padding: 0 0 10px 30px;
+    }
+
+
+
+}
